@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="style1.css">
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align:right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;}
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(page-title.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+
+</style>
+</head>
+<!-- <body>- -->
+<div class="logo">
+<img src="logo.png" style="height:50px;width:250px;margin-left:40px">
+</div>
+<div class="main">
+ <ul>
+		    <li><a href="home.html">HOME</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+			<li class="active"><a href="#">ADMIN</a></li>
+			<li><a href="cars.html"> CARS </a></li>
+			<li><a href="contact.html">CONTACT US</a></li>
+		</ul>
+</div>
+
+<form class="myForm" name="myForm" method="post" onsubmit="return validate()" action="welcome.html">
+<br><br><br><br><br><br><br><br><br><br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%">Admin Username 
+<input type="text" name="username" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="Enter UserName" style="border:1px solid">
+</label>
+</p>
+<br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%">Admin Password&nbsp
+<input type="password" name="password" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+ placeholder="Enter Password" style="border:1px solid">
+</label>
+</p>
+<br>
+<p><button style="position:absolute;left: 33%">Login</button></p>
+</form>
+
+<script>
+function validate(){
+var username=document.forms["myForm"]["username"].value;
+   if(username.length==0)
+   { alert("Please enter the Username."); return false; }
+   if(username!="myusername")
+   { alert("Incorrect username!"); return false; }
+  
+var password=document.forms["myForm"]["password"].value;
+   if(password.length==0) 
+   { alert("Please enter the Password."); return false; }
+   if(password!="adminpassword")
+   { alert("Incorrect Password!"); return false; }
+   
+}
+
+</script>
+	
+</body>
+</html>

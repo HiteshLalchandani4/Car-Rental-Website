@@ -1,0 +1,23 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(rent.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	text-align:center;
+	color:#FFFAFA;
+}
+#rent{
+	margin-top:20%;
+}
+#rent a{
+	color:#FF0000;
+}
+#give a{
+	color:#FF0000;
+}
+#rent a:hover{
+	color:#A7FC00;
+}
+#give a:hover{
+	color:#A7FC00;
+}

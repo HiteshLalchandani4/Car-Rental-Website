@@ -1,0 +1,86 @@
+ul{
+	 float:right;
+	 list-style-type: none;
+	 margin-top:25px
+}
+ul li{
+	display: inline-block;
+	margin-top:8px;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 2px 20px;
+	border: 1px solid transparent;
+	transition:0.4s ;
+}
+ul li.active a{background-color:#fff;
+	color:#000;
+	
+}
+ul li a:hover{
+	background-color:#fff;
+	color:#000;
+}
+.logo img{
+	 float: left;
+	 width: 200px;
+	 height:auto;
+	 margin-top:15px
+}
+.main{
+	max-width: 1200px;
+	margin:auto;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(page-title.jpg);
+	background-size: cover;
+	font-family: century Gothic;
+}
+.tite{
+	padding-top:140px;
+	color:#fff;
+	
+}
+.tite h1{
+	font-size: 32px;
+	line-height: 10px;
+	display:inline-block;
+}
+ form{
+	 margin-top: 50px;
+ }
+ .form-control{
+	 width:600px;
+	 background:transparent;
+	 border:none;
+	 outline:none;
+	 border-bottom: 1px solid gray;
+	 color: #fff;
+	 font-size: 18px;
+	 margin-bottom:16px;
+ }
+ 
+ input{
+	 height: 45px;
+ }
+ 
+ form .submit{
+	 background-color:#ff5722;
+	 border-color:transparent;
+	 color:#fff;
+	 font-size:20px;
+	 letter-spacing:2px;
+	 height: 50px;
+	 margin-top:20px;
+	 transition: 0.4s ease;
+	 
+ }
+   form .submit:hover{
+	   background-color: silver;
+	   cursor: pointer;
+   }

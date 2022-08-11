@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: century Gothic;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(page-title.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+ul{
+	 float:right;
+	 list-style-type: none;
+	 margin-top:25px
+}
+ul li{
+	display: inline-block;
+	margin-top:8px;
+}
+ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 2px 20px;
+	border: 1px solid transparent;
+	transition:0.4s ;
+}
+ul li.active a{background-color:#fff;
+	color:#000;
+	
+}
+ul li a:hover{
+	background-color:#fff;
+	color:#000;
+}
+.logo img{
+	 float: left;
+	 width: 200px;
+	 height:auto;
+	 margin-top:15px
+}
+.main{
+	max-width: 1200px;
+	margin:auto;
+}
+
+.title{
+	position:absolute;
+	margin-top:13%;
+	margin-left:5%;
+	
+}
+.title h1{
+	 color: #fff;
+	 font-size:65px;
+	 display:inline-block;
+}
+.title h2{
+	color: #fff;
+	font-size:30px;
+	display:inline-block;
+}
+
+.video iframe{
+	
+	margin-top:9%;
+	float:right;
+	margin-right:4%;
+	width:500px;
+	height:300px;
+	display:inline-block;
+}
+
+	
+.reg a{
+	background-color:#FFBF00;
+	color:	#000000;
+	font-size:40px;
+	padding: 2px 15px;
+	border: 1px solid transparent;
+	transition:0.4s ;
+	margin-top:21%;
+	display:inline-block;
+}
+.reg a:hover{
+	background-color:#0000FF;
+	color:#FFB7C5;
+}	
+	

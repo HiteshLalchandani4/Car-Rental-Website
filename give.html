@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html >
+<head>
+<link type="text/css" rel="stylesheet" href="style1.css">
+<title></title>
+
+<!-- CSS -->
+<style>
+.myForm {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.8em;
+width: 30em;
+padding: 1em;
+}
+
+.myForm * {
+box-sizing: border-box;
+}
+
+.myForm label {
+padding: 0;
+font-weight: bold;
+text-align: right;
+display: block;
+}
+
+.myForm input,
+.myForm select,
+.myForm textarea {
+margin-left: 2em;
+float: right;
+width: 20em;
+border: 1px solid #ccc;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 0.9em;
+padding: 0.3em;
+}
+
+.myForm textarea {
+height: 100px;
+}
+
+body {
+   background-image: url("back6.jpg");
+   background-color: #cccccc;
+}
+.myForm button {
+padding: 1em;
+border-radius: 0.5em;
+background: #eee;
+border: none;
+font-weight: bold;
+margin-left: 14em;
+margin-top: 1.8em;
+}
+
+.myForm button:hover {
+background: #ccc;
+cursor: pointer;
+</style>
+</head>
+
+<body>
+<div class="main">
+<div class="logo">
+<img src="logo.png" style="height:70px;width:120px;">
+</div>
+
+</div>
+
+<form class="myForm" name="myForm" onsubmit="return validate()" method="post" action="give1.html">
+<br><br><br><br><br><br><br><br><br><br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%"><b>CAR-ID&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+<input type="text" name="carid" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="Enter CAR-ID" style="border:1px solid">
+</label> 
+</p>
+<br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%"><b>CAR Name </b>          
+<input type="text" name="depname" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="Enter CAR Name" style="border:1px solid">
+</label>
+</p>
+<br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%"><b>FROM&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </b>          
+<input type="date" name="date" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="date of givings" style="border:1px solid">
+</label>
+</p>
+<br><br>
+<p>
+<label style="color:aqua;position:absolute;left: 35%"><b>TO&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>          
+<input type="date" name="date" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="date of taking" style="border:1px solid">
+</label>
+</p>
+<br><br>
+
+<p>
+<label style="color:aqua;position:absolute;left: 35%"><b>PRICE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</b>
+<input type="text" name="priceid" onmouseover="this.style.backgroundColor='mediumseagreen'"
+	onkeydown="this.style.backgroundColor='silver'" onmouseout="this.style.backgroundColor='white'"
+	placeholder="Enter price per day of car" style="border:1px solid">
+</label> 
+</p>
+<br><br>
+<p><button style="position:absolute;left: 32%"><a href="give1.html">SUBMIT</a></button></p>
+
+
+
+</form>
+
+<script>
+function validate(){
+var carid=document.forms["myForm"]["carid"].value;
+   if(carid.length==0)
+  { alert("Please enter the Car-ID"); return false; }
+  var num=/^[0-9]+$/;
+     else if(num.test(carid)==false)
+	  { alert("Car-ID should be in numbers!");
+	  return false; }
+   
+var depname=document.forms["myForm"]["depname"].value;
+   else if(depname.length==0)
+  { alert("Please enter the Car Name"); return false; }
+  var lett=/^[A-Za-z]+$/;
+     else if(lett.test(depname)==false)
+	  { alert("CAR Name should be in letters!");
+	  return false; }
+	  var price=document.forms["myForm"]["priceid"].value;
+   else if(priceid.length==0)
+  { alert("Please enter the PRICE"); return false; }
+  var num=/^[0-9]+$/;
+     else if(num.test(price)==false)
+	  { alert("PRICE should be in numbers!");
+	  return false; }
+
+}
+	
+</script>
+
+</body>
+</html>
